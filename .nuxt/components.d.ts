@@ -14,9 +14,11 @@ type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}
 interface _GlobalComponents {
       'About': typeof import("../app/components/About.vue")['default']
     'AppFooter': typeof import("../app/components/AppFooter.vue")['default']
+    'Awards': typeof import("../app/components/Awards.vue")['default']
     'Contact': typeof import("../app/components/Contact.vue")['default']
     'Experience': typeof import("../app/components/Experience.vue")['default']
-    'Post': typeof import("../app/components/Post.vue")['default']
+    'Hobbies': typeof import("../app/components/Hobbies.vue")['default']
+    'Projects': typeof import("../app/components/Projects.vue")['default']
     'Skills': typeof import("../app/components/Skills.vue")['default']
     'SharedBarChart': typeof import("../app/components/shared/BarChart.vue")['default']
     'SharedNavigation': typeof import("../app/components/shared/Navigation.vue")['default']
@@ -47,9 +49,11 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
       'LazyAbout': LazyComponent<typeof import("../app/components/About.vue")['default']>
     'LazyAppFooter': LazyComponent<typeof import("../app/components/AppFooter.vue")['default']>
+    'LazyAwards': LazyComponent<typeof import("../app/components/Awards.vue")['default']>
     'LazyContact': LazyComponent<typeof import("../app/components/Contact.vue")['default']>
     'LazyExperience': LazyComponent<typeof import("../app/components/Experience.vue")['default']>
-    'LazyPost': LazyComponent<typeof import("../app/components/Post.vue")['default']>
+    'LazyHobbies': LazyComponent<typeof import("../app/components/Hobbies.vue")['default']>
+    'LazyProjects': LazyComponent<typeof import("../app/components/Projects.vue")['default']>
     'LazySkills': LazyComponent<typeof import("../app/components/Skills.vue")['default']>
     'LazySharedBarChart': LazyComponent<typeof import("../app/components/shared/BarChart.vue")['default']>
     'LazySharedNavigation': LazyComponent<typeof import("../app/components/shared/Navigation.vue")['default']>
@@ -86,9 +90,11 @@ declare module 'vue' {
 
 export const About: typeof import("../app/components/About.vue")['default']
 export const AppFooter: typeof import("../app/components/AppFooter.vue")['default']
+export const Awards: typeof import("../app/components/Awards.vue")['default']
 export const Contact: typeof import("../app/components/Contact.vue")['default']
 export const Experience: typeof import("../app/components/Experience.vue")['default']
-export const Post: typeof import("../app/components/Post.vue")['default']
+export const Hobbies: typeof import("../app/components/Hobbies.vue")['default']
+export const Projects: typeof import("../app/components/Projects.vue")['default']
 export const Skills: typeof import("../app/components/Skills.vue")['default']
 export const SharedBarChart: typeof import("../app/components/shared/BarChart.vue")['default']
 export const SharedNavigation: typeof import("../app/components/shared/Navigation.vue")['default']
@@ -119,9 +125,11 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const LazyAbout: LazyComponent<typeof import("../app/components/About.vue")['default']>
 export const LazyAppFooter: LazyComponent<typeof import("../app/components/AppFooter.vue")['default']>
+export const LazyAwards: LazyComponent<typeof import("../app/components/Awards.vue")['default']>
 export const LazyContact: LazyComponent<typeof import("../app/components/Contact.vue")['default']>
 export const LazyExperience: LazyComponent<typeof import("../app/components/Experience.vue")['default']>
-export const LazyPost: LazyComponent<typeof import("../app/components/Post.vue")['default']>
+export const LazyHobbies: LazyComponent<typeof import("../app/components/Hobbies.vue")['default']>
+export const LazyProjects: LazyComponent<typeof import("../app/components/Projects.vue")['default']>
 export const LazySkills: LazyComponent<typeof import("../app/components/Skills.vue")['default']>
 export const LazySharedBarChart: LazyComponent<typeof import("../app/components/shared/BarChart.vue")['default']>
 export const LazySharedNavigation: LazyComponent<typeof import("../app/components/shared/Navigation.vue")['default']>

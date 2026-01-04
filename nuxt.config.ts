@@ -6,38 +6,38 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-
-
-  head: {
-    title: 'Iamcj.',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description',
-        name: 'description',
-        content: 'The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace.' },
-      { property: "og:site_name", content: "Iamcj." },
-      { hid: "og:type", property: "og:type", content: "website" },
-      {
-        hid: "og:url",
-        property: "og:url",
-        content: "https://iamcj.com",
-      },
-      {
-        hid: "og:title",
-        property: "og:title",
-        content: "Iamcj.",
-      },
-      {
-        hid: "og:description",
-        property: "og:description",
-        content:
-          "The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace.",
-      },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+  app: {
+    head: {
+      title: 'Iamcj.',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { key: 'description',
+          name: 'description',
+          content: 'The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace.' },
+        { property: "og:site_name", content: "Iamcj." },
+        { key: "og:type", property: "og:type", content: "website" },
+        {
+          key: "og:url",
+          property: "og:url",
+          content: "https://iamcj.com",
+        },
+        {
+          key: "og:title",
+          property: "og:title",
+          content: "Iamcj.",
+        },
+        {
+          key: "og:description",
+          property: "og:description",
+          content:
+            "The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace.",
+        },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    },
   },
 
   ssr: true,
@@ -57,8 +57,10 @@ export default defineNuxtConfig({
       noExternal: ['vuetify'],
     },
   },
-
-  css: [],
+  css: [
+    '@/assets/fonts/poppins/poppins.css',
+    '@/assets/style/app.styl'
+  ],
   modules: ['@nuxt/fonts', 'vuetify-nuxt-module'],
 
   vuetify: {

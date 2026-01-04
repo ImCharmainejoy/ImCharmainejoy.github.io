@@ -42,7 +42,7 @@
   </v-navigation-drawer>
 </template>
 <script setup>
-  import myAvatar from '@/assets/images/disneyme.png'
+  import myAvatar from '@/assets/images/me.png'
   import { ref, reactive } from 'vue'
   import { useTheme } from 'vuetify'
 

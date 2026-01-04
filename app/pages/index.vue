@@ -1,11 +1,7 @@
 <template>
   <v-container class="fill-height px-2">
-    <sharedNavigation :items="items" title="Charmaine Joy P. Rosatace" />
-
+    <sharedNavigation :items="items" title="CJPR" />
     <v-row justify="center">
-     <!--  <v-col cols="8">
-        <post />
-      </v-col> -->
       <v-col cols="12" sm="11" md="10" lg="8">
         <about />
       </v-col>
@@ -13,7 +9,16 @@
         <skills />
       </v-col>
       <v-col cols="12" sm="11" md="10" lg="8">
+        <projects />
+      </v-col>
+      <v-col cols="12" sm="11" md="10" lg="8">
         <experience />
+      </v-col>
+      <v-col cols="12" sm="11" md="10" lg="8">
+        <hobbies />
+      </v-col>
+      <v-col cols="12" sm="11" md="10" lg="8">
+        <awards />
       </v-col>
       <v-col cols="12" sm="11" md="10" lg="8">
         <contact />
@@ -24,13 +29,6 @@
 <script lang="ts" setup>
 
   const items = [
-  // {
-  //   el: '#post',
-  //   offset: -70,
-  //   icon: 'mdi-post',
-  //   title: 'Posts',
-  //   model: 'Posts'
-  // },
   {
     el: '#about',
     offset: -70,
@@ -46,17 +44,38 @@
     model: 'Skills'
   },
   {
+    el: '#projects',
+    offset: -70,
+    icon: 'mdi-post',
+    title: 'Projects',
+    model: 'Projects'
+  },
+  {
     el: '#experience',
     offset: -70,
-    icon: 'mdi-folder-multiple',
-    title: 'Experience',
-    model: 'Experience'
+    icon: 'mdi-briefcase-outline',
+    title: 'Work Experience',
+    model: 'Work Experience'
+  },
+  {
+    el: '#hobbies',
+    offset: -70,
+    icon: 'mdi-coffee',
+    title: 'Hobbies',
+    model: 'Hobbies'
+  },
+  {
+    el: '#awards',
+    offset: -70,
+    icon: 'mdi-trophy-award',
+    title: 'Awards & Recognitions',
+    model: 'Awards & Recognitions'
   },
   {
     el: '#contact',
     offset: -70,
     icon: 'mdi-email',
-    title: 'Contact Me',
-    model: 'Contact Me'
+    title: 'Contacts',
+    model: 'Contacts'
   }]
 </script>

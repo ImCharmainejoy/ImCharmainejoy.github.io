@@ -1,10 +1,9 @@
 <template>
   <v-card
     id="experience"
-    prepend-icon="mdi-folder-multiple"
+    prepend-icon="mdi-briefcase-outline"
     variant="flat"
-    title="Experience"
-    subtitle="This is my work experience information section.">
+    title="Work Experience">
     <v-timeline
       density="compact"
       side="end"
@@ -65,9 +64,49 @@
         </div>
       </v-timeline-item>
     </v-timeline>
+
+    <v-card
+      variant="flat">
+      <v-row
+        align="center"
+        class="fill-height"
+        justify="center"
+      >
+        <template v-for="(item, i) in activities" :key="i">
+          <v-col
+            cols="12"
+            md="4"
+          >
+            <v-img
+              :src="item.img"
+              width="200"
+              cover
+              class="rounded-lg"
+              hover
+            >
+              <div
+                :class="isHovering ? 'opacity-100' : 'opacity-0'"
+                class="d-flex align-center justify-center transition-opacity duration-500"
+                style="height: 100%; background: rgba(0,0,0,0.4); color: white;"
+              >
+              </div>
+            </v-img>
+          </v-col>
+        </template>
+      </v-row>
+      <v-card-text class="text-center pa-4">
+        <p class="text-h7 font-family font-weight-medium">
+          These are some of my notable activities and projects I have worked on during my career.
+        </p>
+      </v-card-text>
+    </v-card>
   </v-card>
 </template>
 <script setup>
+  import hobby1 from '@/assets/images/act1.png'
+  import hobby2 from '@/assets/images/act2.png'
+  import hobby3 from '@/assets/images/act3.png'
+
   const items = [
   {
     is_fill_dot: true,
@@ -113,4 +152,23 @@
   },
 
 ]
+
+  const activities = [{
+    title: 'School Class & Records Management System',
+    text: 'The frontend stack was constructed with Vue v2, JavaScript, ECMAScript, Vuetify v2, and Vuex v3.',
+    link: 'https://github.com/ImCharmainejoy/Iamcj.',
+    img: hobby1
+  },
+  {
+    title: 'Sales Tracker System',
+    text: 'The largest free online frontend event. ever.',
+    link: 'https://github.com/ImCharmainejoy/Iamcj.',
+    img: hobby2
+  },
+  {
+    title: 'Vaccination System',
+    text: 'The frontend stack was constructed with Vue v2, JavaScript, ECMAScript, Vuetify v2, Nuxt v2, and Vuex v3.',
+    link: 'https://github.com/ImCharmainejoy/Iamcj.',
+    img: hobby3
+  }]
 </script>
