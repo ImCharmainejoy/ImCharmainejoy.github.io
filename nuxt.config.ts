@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   app: {
-    baseURL: '/iamcharmainejoy.github.io',
+    baseURL: '/',
     head: {
       title: 'Iamcj.',
       meta: [
