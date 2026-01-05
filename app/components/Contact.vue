@@ -8,7 +8,8 @@
       prepend-icon="mdi-email"
       title="Contacts"
     >
-      <div class="pa-4 d-flex justify-space-evenly align-center ga-4">
+      <div 
+        class="pa-4 d-flex flex-row align-center ga-4">
         <v-avatar size="100">
           <v-img :src="me" alt="Me"></v-img>
         </v-avatar>
@@ -37,6 +38,7 @@
   </v-container>
 </template>
 <script setup>
+  const { smAndUp } = useDisplay()
   import me from '@/assets/images/office.png'
 </script>
 <style scoped>

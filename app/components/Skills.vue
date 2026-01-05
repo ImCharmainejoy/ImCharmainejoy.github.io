@@ -4,7 +4,7 @@
     variant="flat"
     class="px-2">
     <v-row wrap>
-      <v-col xs="12" sm="12" md="4"
+      <v-col cols="12" sm="12" md="4"
        v-for="(item, index) in data.items" :key="index" >
         <v-chip tonal class="text-h5 font-style my-4 mx-5 card-bg-color">
           {{ item.label }}
@@ -22,9 +22,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useDisplay } from 'vuetify'
-
-const { smAndUp } = useDisplay()
 
 // HTML, CSS, and JavaScript Skillset Overview
 const data = ref({

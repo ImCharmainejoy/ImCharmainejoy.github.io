@@ -13,7 +13,7 @@
         justify="center"
       >
         <template v-for="(item, i) in items" :key="i">
-          <v-col cols="12" md="6"
+          <v-col cols="6" md="6"
             v-if="i % 2 === 0">
             <v-card-title class="text-h6 d-flex flex-column">
               <p class="mt-4">
@@ -30,7 +30,7 @@
             </v-card-title>
           </v-col> 
           <v-col
-            cols="12"
+            cols="6"
             md="6"
           >
             <v-hover v-slot="{ isHovering, props }">
@@ -51,7 +51,7 @@
             </v-img>
           </v-hover>
           </v-col>
-          <v-col cols="12" md="6"
+          <v-col cols="6" md="6"
             v-if="i % 2 !== 0">
             <v-card-title class="text-h6 d-flex flex-column break-word">
               <p class="mt-4 break-word">

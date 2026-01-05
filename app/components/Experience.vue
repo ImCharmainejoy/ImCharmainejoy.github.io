@@ -74,12 +74,12 @@
       >
         <template v-for="(item, i) in activities" :key="i">
           <v-col
-            cols="12"
+            cols="4"
             md="4"
           >
             <v-img
               :src="item.img"
-              width="200"
+              :width="smAndUp ? '200' : '100'"
               cover
               class="rounded-lg"
               hover
@@ -106,6 +106,8 @@
   import hobby1 from '@/assets/images/act1.png'
   import hobby2 from '@/assets/images/act2.png'
   import hobby3 from '@/assets/images/act3.png'
+
+  const { smAndUp } = 'useDisplay'
 
   const items = [
   {
