@@ -83,7 +83,7 @@
   {
     title: 'Sales Tracker System',
     text: 'The largest free online frontend event. ever.',
-    link: 'https://github.com/ImCharmainejoy/Iamcj.',
+    link: 'https://github.com/ImCharmainejoy/salesTracker',
     img: project2
   },
   {
