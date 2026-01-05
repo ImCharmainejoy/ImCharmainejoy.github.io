@@ -5,12 +5,12 @@
   >
   <v-row class="negative-top" align="center">
     <v-col cols="12" sm="12" class="text-center">
-      <span class="text-h4 font-style">
+      <span class="font-style" :class="smAndUp ? 'text-h4' : 'text-caption'">
         Hi! This is Charmaine Joy Rosatace.
       </span>
     </v-col>
     <v-col cols="12" sm="4" class="text-center"> 
-      <v-avatar size="180">
+      <v-avatar :size="smAndUp ? '180' : '100'">
         <v-img :src="myAvatar" alt="Iamcj. Avatar"></v-img>
       </v-avatar>
     </v-col>
@@ -35,6 +35,7 @@
 </template>
 <script setup>
   import myAvatar from '@/assets/images/me.png'
+  const { smAndUp } = 'useDisplay'
 </script>
 <style scoped>
 .negative-top {
