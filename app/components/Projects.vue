@@ -15,19 +15,14 @@
         <template v-for="(item, i) in items" :key="i">
           <v-col cols="6" md="6"
             v-if="i % 2 === 0">
-            <v-card-title class="text-h6 d-flex flex-column">
-              <p class="mt-4">
-                {{ item.title }}
+            <p class="mt-4 text-subtitle-1 break-word font-weight-bold">
+              {{ item.title }}
+            </p>
+            <div>
+              <p class="ma-0 text-body-1 font-weight-medium break-word">
+                {{ item.text }}
               </p>
-              <div>
-                <p class="ma-0 text-body-1 font-weight-bold">
-                  {{ item.text }}
-                </p>
-                <p class="text-caption font-weight-medium">
-                  {{ item.subtext }}
-                </p>
-              </div>
-            </v-card-title>
+            </div>
           </v-col> 
           <v-col
             cols="6"
@@ -53,17 +48,15 @@
           </v-col>
           <v-col cols="6" md="6"
             v-if="i % 2 !== 0">
-            <v-card-title class="text-h6 d-flex flex-column break-word">
-              <p class="mt-4 break-word">
-                {{ item.title }}
+            <p class="mt-4 text-subtitle-1 break-word font-weight-bold">
+              {{ item.title }}
+            </p>
+            <div>
+              <p class="ma-0 text-body-1 font-weight-medium break-word">
+                {{ item.text }}
               </p>
-              <div>
-                <span class="ma-0 text-body-1 font-weight-bold break-word">
-                  {{ item.text }}
-                </span>
-              </div>
-            </v-card-title>
-          </v-col> 
+            </div>
+          </v-col>
         </template>
       </v-row>
     </v-card>
@@ -82,7 +75,7 @@
   },
   {
     title: 'Sales Tracker System',
-    text: 'The largest free online frontend event. ever.',
+    text: 'The frontend stack was constructed using Vue 3, JavaScript, TypeScript, Tailwind CSS v3, Vite v7, and Inertia.js v2.',
     link: 'https://github.com/ImCharmainejoy/salesTracker',
     img: project2
   },

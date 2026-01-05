@@ -25,7 +25,6 @@ import { ref } from 'vue'
 
 // HTML, CSS, and JavaScript Skillset Overview
 const data = ref({
-  labels: ['CSS Grid & Flexbox', 'HTML5 & Semantic Markup', 'JavaScript', 'Ecmascript', 'Typescript'],
   items: [
     {
       label: '6+',
