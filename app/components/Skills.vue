@@ -40,8 +40,8 @@ const data = ref({
       subdescription: 'Successfully completed ten significant projects on time and within budget.',
     },{
       label: '9+',
-      description: 'Years of experience in frontend web development',
-      subdescription: 'Over six years of hands-on experience.',
+      description: 'Skills acquired through various projects',
+      subdescription: 'Acquired more than nine skills to enhance my expertise.',
     }
   ]
 });

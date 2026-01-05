@@ -15,10 +15,10 @@
         <experience />
       </v-col>
       <v-col cols="12" sm="11" md="10" lg="8">
-        <hobbies />
+        <awards />
       </v-col>
       <v-col cols="12" sm="11" md="10" lg="8">
-        <awards />
+        <hobbies />
       </v-col>
       <v-col cols="12" sm="11" md="10" lg="8">
         <contact />
@@ -58,18 +58,18 @@
     model: 'Work Experience'
   },
   {
-    el: '#hobbies',
-    offset: -70,
-    icon: 'mdi-coffee',
-    title: 'Hobbies',
-    model: 'Hobbies'
-  },
-  {
     el: '#awards',
     offset: -70,
     icon: 'mdi-trophy-award',
     title: 'Awards & Recognitions',
     model: 'Awards & Recognitions'
+  },
+  {
+    el: '#hobbies',
+    offset: -70,
+    icon: 'mdi-coffee',
+    title: 'Hobbies',
+    model: 'Hobbies'
   },
   {
     el: '#contact',
