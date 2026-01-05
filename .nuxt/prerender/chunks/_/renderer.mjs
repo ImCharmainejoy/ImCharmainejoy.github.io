@@ -48,7 +48,7 @@ function createHead(options = {}) {
   return head;
 }
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"key":"description","name":"description","content":"The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace."},{"property":"og:site_name","content":"Iamcj."},{"key":"og:type","property":"og:type","content":"website"},{"key":"og:url","property":"og:url","content":"https://iamcj.com"},{"key":"og:title","property":"og:title","content":"Iamcj."},{"key":"og:description","property":"og:description","content":"The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace."}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"Iamcj."};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"key":"description","name":"description","content":"This is a web-based portfolio of Charmaine Joy Rosatace."},{"property":"og:site_name","content":"Iamcj."},{"key":"og:type","property":"og:type","content":"website"},{"key":"og:url","property":"og:url","content":""},{"key":"og:title","property":"og:title","content":"Iamcj."},{"key":"og:description","property":"og:description","content":"This is a web-based portfolio of Charmaine Joy Rosatace."}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"Iamcj."};
 
 const appRootTag = "div";
 

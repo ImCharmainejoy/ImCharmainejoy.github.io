@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   ssr: false,
   app: {
     baseURL: '', 
-    buildAssetsDir: 'assets',
+    // buildAssetsDir: 'assets',
     head: {
       title: 'Iamcj.',
       meta: [
@@ -22,13 +22,13 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { key: 'description',
           name: 'description',
-          content: 'The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace.' },
+          content: 'This is a web-based portfolio of Charmaine Joy Rosatace.' },
         { property: "og:site_name", content: "Iamcj." },
         { key: "og:type", property: "og:type", content: "website" },
         {
           key: "og:url",
           property: "og:url",
-          content: "https://iamcj.com",
+          content: "",
         },
         {
           key: "og:title",
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
           key: "og:description",
           property: "og:description",
           content:
-            "The Iamcj. is a specially designed web-based portfolio of Charmaine Joy Rosatace.",
+            "This is a web-based portfolio of Charmaine Joy Rosatace.",
         },
       ],
       link: [
