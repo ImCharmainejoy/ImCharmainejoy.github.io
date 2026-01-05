@@ -6,7 +6,9 @@
       id="awards"
       prepend-icon="mdi-trophy-award"
       variant="flat"
-      title="Awards & Recognitions">
+      title="Awards & Recognitions"
+      subtitle="
+            These are some of my notable awards and recognitions I have received for my work and contributions.">
       <v-row
         align="center"
         class="fill-height"
@@ -34,11 +36,6 @@
           </v-col>
         </template>
       </v-row>
-      <v-card-text class="text-center pa-4">
-        <p class="text-h7 font-family font-weight-medium">
-            These are some of my notable awards and recognitions I have received for my work and contributions.
-        </p>
-      </v-card-text>
     </v-card>
 </v-container>
 </template>

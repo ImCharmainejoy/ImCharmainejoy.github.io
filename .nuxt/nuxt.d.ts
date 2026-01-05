@@ -1,5 +1,5 @@
-/// <reference types="vuetify-nuxt-module" />
 /// <reference types="@nuxt/fonts" />
+/// <reference types="vuetify-nuxt-module" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference path="types/builder-env.d.ts" />

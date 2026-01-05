@@ -3,7 +3,8 @@
     id="experience"
     prepend-icon="mdi-briefcase-outline"
     variant="flat"
-    title="Work Experience">
+    title="Work Experience"
+    subtitle="These are some of my notable activities and projects I have worked on during my career.">
     <v-timeline
       density="compact"
       side="end"
@@ -94,11 +95,6 @@
           </v-col>
         </template>
       </v-row>
-      <v-card-text class="text-center pa-4">
-        <p class="text-h7 font-family font-weight-medium">
-          These are some of my notable activities and projects I have worked on during my career.
-        </p>
-      </v-card-text>
     </v-card>
   </v-card>
 </template>
@@ -107,7 +103,7 @@
   import hobby2 from '@/assets/images/act2.png'
   import hobby3 from '@/assets/images/act3.png'
 
-  const { smAndUp } = 'useDisplay'
+  const { smAndUp } = useDisplay()
 
   const items = [
   {

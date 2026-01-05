@@ -35,7 +35,7 @@
 </template>
 <script setup>
   import myAvatar from '@/assets/images/me.png'
-  const { smAndUp } = 'useDisplay'
+  const { smAndUp } = useDisplay()
 </script>
 <style scoped>
 .negative-top {

@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 // HTML, CSS, and JavaScript Skillset Overview
 const data = ref({

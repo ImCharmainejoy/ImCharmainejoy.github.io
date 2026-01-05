@@ -6,7 +6,8 @@
       id="hobbies"
       prepend-icon="mdi-coffee"
       variant="flat"
-      title="Hobbies">
+      title="Hobbies"
+      subtitle="These are some of my hobbies and interests that I enjoy during my free time.">
       <v-row
         align="center"
         class="fill-height"
@@ -34,11 +35,6 @@
           </v-col>
         </template>
       </v-row>
-      <v-card-text class="text-center pa-4">
-        <p class="text-h7 font-family font-weight-medium">
-          These are some of my hobbies and interests that I enjoy during my free time.
-        </p>
-      </v-card-text>
     </v-card>
 </v-container>
 </template>
