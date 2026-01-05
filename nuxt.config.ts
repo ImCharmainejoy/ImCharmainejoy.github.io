@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   app: {
+    baseURL: 'iamcharmainejoy.github.io',
     head: {
       title: 'Iamcj.',
       meta: [
@@ -40,7 +41,7 @@ export default defineNuxtConfig({
     },
   },
 
-  ssr: true,
+  ssr: false,
 
   // when enabling ssr option you need to disable inlineStyles and maybe devLogs
   features: {
