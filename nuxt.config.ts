@@ -13,7 +13,8 @@ export default defineNuxtConfig({
   },
   ssr: false,
   app: {
-    baseURL: '/ImCharmainejoy.github.io',
+    baseURL: '', 
+    buildAssetsDir: 'assets',
     head: {
       title: 'Iamcj.',
       meta: [
