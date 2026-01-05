@@ -8,8 +8,8 @@
       prepend-icon="mdi-email"
       title="Contacts"
     >
-      <div 
-        class="pa-4 d-flex flex-row align-center ga-4">
+      <div :class="smAndUp ? 'd-flex justify-space-evenly' : 'justify-center'"
+        class="pa-4 align-center ga-4">
         <v-avatar size="100">
           <v-img :src="me" alt="Me"></v-img>
         </v-avatar>
@@ -20,18 +20,18 @@
           <div class="text-caption">cjrosatace@gmail.com</div>
         </div>
 
-        <v-divider vertical class="mx-5"></v-divider>
+        <v-divider v-if="smAndUp" vertical class="mx-5"></v-divider>
 
         <v-btn icon="mdi-github" variant="text" size="small"
-          class="card-bg-color" 
+          class="card-bg-color ma-2" 
           href="https://github.com/ImCharmainejoy"
           target="_blank"></v-btn>
         <v-btn icon="mdi-linkedin" variant="text" size="small" color="blue"
-          class="card-bg-color"
+          class="card-bg-color ma-2"
           href="https://www.linkedin.com/in/charmaine-joy-rosatace-397808105/"
           target="_blank"></v-btn>
         <v-btn icon="mdi-facebook" variant="text" size="small" color="blue darken-2"
-          class="card-bg-color"
+          class="card-bg-color ma-2"
           href="https://www.messenger.com" target="_blank"></v-btn>
       </div>
     </v-card>

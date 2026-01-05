@@ -19,7 +19,7 @@
           >
             <v-img
               :src="item.img"
-              :width="smAndUp ? '200' : '100'"
+              :width="smAndUp ? '200' : '150'"
               cover
               class="rounded-lg"
               hover
