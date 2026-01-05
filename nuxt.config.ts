@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   ssr: false,
   app: {
-    baseURL: 'Iamcj.',
+    baseURL: '/Iamcj',
     head: {
       title: 'Iamcj.',
       meta: [
