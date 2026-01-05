@@ -6,8 +6,14 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
+  nitro: {
+    output: {
+      publicDir: 'dist' // This forces the static files into a folder named /dist
+    }
+  },
+  ssr: false,
   app: {
-    baseURL: 'iamcharmainejoy.github.io',
+    baseURL: '/iamcharmainejoy.github.io',
     head: {
       title: 'Iamcj.',
       meta: [
@@ -41,8 +47,6 @@ export default defineNuxtConfig({
     },
   },
 
-  ssr: false,
-
   // when enabling ssr option you need to disable inlineStyles and maybe devLogs
   features: {
     inlineStyles: false,
@@ -63,6 +67,11 @@ export default defineNuxtConfig({
     '@/assets/style/app.styl'
   ],
   modules: ['@nuxt/fonts', 'vuetify-nuxt-module'],
+  fonts: {
+    families: [
+      { name: 'Poppins', provider: 'local' }
+    ]
+  },
 
   vuetify: {
     moduleOptions: {
