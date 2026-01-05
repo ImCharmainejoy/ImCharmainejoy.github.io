@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fill-height px-2">
+  <v-container class="fill-height px-2" width="100%">
     <sharedNavigation :items="items" title="CJPR" />
     <v-row justify="center">
       <v-col cols="12" sm="11" md="10" lg="8">
