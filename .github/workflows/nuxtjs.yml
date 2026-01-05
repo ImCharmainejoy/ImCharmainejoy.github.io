@@ -46,6 +46,12 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - run: npm install
+      - run: npx nuxi generate # This creates the .output/public folder
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.output/public' # Nuxt 3 output directory
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
