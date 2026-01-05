@@ -24,7 +24,7 @@
         v-scroll-to="{el: item.el ,offset: item.offset}"
       ></v-list-item>
     </v-list>
-   <template v-slot:append>
+   <!-- <template v-slot:append>
       <div class="pa-2">
         <v-switch
           @click="theme.toggle()"
@@ -38,7 +38,7 @@
           </template>
         </v-switch>
       </div>
-    </template>
+    </template> -->
   </v-navigation-drawer>
 </template>
 <script setup>

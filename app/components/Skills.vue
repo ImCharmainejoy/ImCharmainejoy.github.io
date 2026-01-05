@@ -6,7 +6,7 @@
     <v-row wrap>
       <v-col xs="12" sm="12" md="4"
        v-for="(item, index) in data.items" :key="index" >
-        <v-chip tonal class="text-h5 font-style mb-4 mx-5 card-bg-color">
+        <v-chip tonal class="text-h5 font-style my-4 mx-5 card-bg-color">
           {{ item.label }}
         </v-chip>
         <v-card-text class="font-style mb-4">
